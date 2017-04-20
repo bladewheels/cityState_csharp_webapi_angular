@@ -1,0 +1,30 @@
+<div class="panel panel-primary"
+     ng-controller="CityListCtrl as vm">
+    <div class="panel-heading"
+         style="font-size:large">
+        City List
+    </div>
+
+    <div class="panel-body">
+        <label for="statesSelect"> Select a State: </label>
+        <select name="statesSelect" size="vm.states.length" ng-model="vm.selectedState" ng-change="vm.filterByState()"
+            ng-options="state.StateProvinceName for state in vm.states track by state.StateProvinceId" ></select>
+        <table class="table">
+
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Code</td>
+                    <td>StateProvince</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="city in vm.cities">
+                    <td>{{ city.CityName}}</td>
+                    <td>{{ city.CityId }}</td>
+                    <td>{{ city.StateProvinceId }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
