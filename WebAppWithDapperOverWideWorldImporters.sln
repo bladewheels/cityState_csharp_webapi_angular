@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppWithDapperOverWideWorldImporters", "WebAppWithDapperOverWideWorldImporters\WebAppWithDapperOverWideWorldImporters.csproj", "{F2CB20B8-6EE8-4B74-8F4F-282FFAE65EA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9775DA5A-0932-411F-AF81-38CE92EA01D4}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\tmp\WideWorldImporters-Full.bak = ..\..\..\tmp\WideWorldImporters-Full.bak
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
